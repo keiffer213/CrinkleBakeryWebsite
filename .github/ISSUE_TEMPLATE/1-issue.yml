@@ -1,0 +1,79 @@
+name: ✒️ Issue ✒️
+description: Report a general issue not covered by other templates.
+title: "Issue: [Title of Issue]"
+labels: ["type:issue"]
+body:
+
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: Description
+      description: Describe the issue, why it matters, and any context that helps explain it.
+      placeholder: Tell us about your issue!
+    validations:
+      required: true
+
+  - type: textarea
+    id: task-list
+    attributes:
+      label: Tasks
+      description: (Optional) List any tasks you need to accomlish this issue.
+      value: |
+        <!-- No need to fill, but recommended! -->
+        <!-- 
+
+        Tasks:
+        - [ ] Task 1
+        - [ ] Task 2
+
+        -->
+
+  - type: textarea
+    id: visuals
+    attributes:
+      label: Visual Aids
+      description: (Optional) Add any screenshots, gifs, diagrams, or other visual references.
+      placeholder: Add any screenshots, gifs, diagrams, or other visual references.
+      value: |
+        <details>
+          <summary> Expand ⬇️ </summary>
+          <!-- add GIFs/Screenshots/Videos/Diagrams here -->
+          <!-- Leave a blank line below -->
+
+
+
+        </details>
+
+  - type: markdown
+    attributes:
+      value: |
+        Please confirm the following when creating this issue.
+
+        Issue Checklist:
+          ✅ I have a clear description of the issue
+          ✅ I have assigned myself to this issue
+          ✅ I have assigned a label to this issue
+          ✅ I have assigned a project to this issue
+          ✅ I have linked my branch to this issue (will show up after creation)
+
+  # If you want the checklist to be required, add the following:
+  # It will prevent users from submitting the issue without checking the boxes
+  # but it will be visible in the issue unless deleted after creation 
+
+  # - type: checkboxes
+  #   id: checklist
+  #   attributes:
+  #     label: Checklist
+  #     description: Confirm the following before submitting
+  #     options:
+  #       - label: I have a clear description of the issue
+  #         required: true
+  #       - label: I have assigned myself to this issue
+  #         required: true
+  #       - label: I have assigned a label to this issue
+  #         required: true
+  #       - label: I have assigned a project to this issue
+  #         required: true
+    
+
+
